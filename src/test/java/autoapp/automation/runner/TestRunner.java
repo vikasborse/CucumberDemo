@@ -10,5 +10,5 @@ import org.junit.runner.RunWith;
                     glue = {"autoapp/automation/stepDef", "autoapp/automation/utility"},
                     plugin = {"pretty", "html:target/cucumber-html-report","json:cucumber.json"}
                 )
-public class testRunRegister {
+public class TestRunner {
 }
