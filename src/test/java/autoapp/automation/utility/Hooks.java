@@ -3,12 +3,12 @@ package autoapp.automation.utility;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-public class hooks {
+public class Hooks {
     public static BrowserDriver driver;
 
     @Before
     public void setUp(){
-        String browserName = getParameter("browser");
+        String browserName = "chrome";
         System.out.println("driver "+ browserName +"");
         driver = new BrowserDriver(browserName);
     }
