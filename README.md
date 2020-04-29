@@ -1,21 +1,12 @@
 # UITestsBelong
 
-Notes:
-chromedriver and geckodriver present in this repo macOS compatible.
-please replace respective drivers with Platform you are going to run from below url
+***Coding assignment - Cucumber scenario***
+Write feature file , step definitions and if possible pages for any of the below two requirements 
 
-ChromeDiver
-https://chromedriver.storage.googleapis.com/index.html?path=72.0.3626.69/
+Site URL: http://automationpractice.com/
 
-FirefoxDriver
-https://github.com/mozilla/geckodriver/releases/tag/v0.21.0
+1.	While registering, if the email address is incorrect. User should see an error message
+2.	Check whether Megamenu works (Dresses -> Summer dresses)
+3.	On the Summer dresses page, select a dress(Quick view) and change the color (Blue) and then add the item to cart, Validate	whether same product name, color and quantity are displayed in Cart Summary page.
 
-Command to runtest
-
-mvn clean test -Dbrowser=chrome
-
-OR
-
-mvn clean test -Dbrowser=firefox
-
-Note: This test can be run uninterrupted(No datasetup required) because emailId will be generated with Random number example: test3456@testauto.com
+Once you finish assignment, please raise a PR on develop. 
