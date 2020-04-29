@@ -71,7 +71,7 @@
             <forkCount>2</forkCount>
             <reuseForks>true</reuseForks>
             <includes>
-              <include>**/testRun*.class</include>
+              <include>**/TestRun*.class</include>
             </includes>
           </configuration>
         </plugin>
