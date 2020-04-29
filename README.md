@@ -10,3 +10,5 @@ Site URL: http://automationpractice.com/
 3.	On the Summer dresses page, select a dress(Quick view) and change the color (Blue) and then add the item to cart, Validate	whether same product name, color and quantity are displayed in Cart Summary page.
 
 Once you finish assignment, please raise a PR on develop. 
+
+If you have write access issues, please push changes to your personal account and share.
