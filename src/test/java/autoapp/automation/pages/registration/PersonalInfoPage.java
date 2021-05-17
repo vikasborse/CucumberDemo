@@ -1,5 +1,6 @@
-package autoapp.automation.pages;
+package autoapp.automation.pages.registration;
 
+import autoapp.automation.pages.BasePage;
 import autoapp.automation.utility.BrowserDriver;
 import cucumber.api.DataTable;
 import org.openqa.selenium.By;
@@ -8,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 import java.util.Map;
 
-public class PersonalInfoPage extends BasePage{
+public class PersonalInfoPage extends BasePage {
 
     public static String Mr_Id = "id_gender1";
     public static String Mrs_Id = "id_gender2";

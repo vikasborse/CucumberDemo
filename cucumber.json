@@ -1,43 +1,43 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 3511319258,
+              "duration": 2413195184,
               "status": "passed"
             },
             "match": {
-              "location": "hooks.setUp()"
+              "location": "Hooks.setUp()"
             }
           }
         ],
-        "line": 3,
-        "name": "Validate user is able to register",
+        "line": 19,
+        "name": "Verify Cart works in application",
         "description": "",
-        "id": "registering-to-automation-practice;validate-user-is-able-to-register",
+        "id": "verify-cart-works-in-application;verify-cart-works-in-application;;2",
         "after": [
           {
             "result": {
-              "duration": 619211050,
+              "duration": 190001550,
               "status": "passed"
             },
             "match": {
-              "location": "hooks.tearDown()"
+              "location": "Hooks.tearDown()"
             }
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8373813162,
+              "duration": 8410033893,
               "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "Automation practice application is opened",
             "match": {
               "location": "RegisterStepDef.automation_practice_application_is_opened()"
@@ -46,10 +46,263 @@
           },
           {
             "result": {
-              "duration": 4467083745,
+              "duration": 8898193294,
               "status": "passed"
             },
-            "line": 5,
+            "line": 7,
+            "name": "I verify the mega menu is working",
+            "match": {
+              "location": "NavigationStepDef.iVerifyTheMegaMenuIsWorking(DataTable)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "DRESSES/SUMMER DRESSES"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3155774473,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I add product to cart from Quick View",
+            "match": {
+              "location": "ProductStepDef.iSelectADressInQuickView(DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Color",
+                  "Quantity"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Printed Summer Dress",
+                  "Blue",
+                  "1"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1107375508,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify the product is added in cart",
+            "match": {
+              "location": "CartStepsDef.iVerifyTheProductIsAddedInCart(DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Color",
+                  "Quantity"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Printed Summer Dress",
+                  "Blue",
+                  "1"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@cart"
+          },
+          {
+            "line": 4,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Cart works in application",
+    "description": "",
+    "id": "verify-cart-works-in-application",
+    "keyword": "Feature",
+    "uri": "Cart.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1622991998,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Validate Mega menu\u0027s works",
+        "description": "",
+        "id": "verify-navigation-works-in-application;validate-mega-menu\u0027s-works",
+        "after": [
+          {
+            "result": {
+              "duration": 158013985,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7771664039,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Automation practice application is opened",
+            "match": {
+              "location": "RegisterStepDef.automation_practice_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8867485633,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I verify the mega menu is working",
+            "match": {
+              "location": "NavigationStepDef.iVerifyTheMegaMenuIsWorking(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "DRESSES/SUMMER DRESSES"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@regression"
+          },
+          {
+            "line": 4,
+            "name": "@navigation"
+          }
+        ]
+      }
+    ],
+    "name": "Verify navigation works in application",
+    "description": "",
+    "id": "verify-navigation-works-in-application",
+    "keyword": "Feature",
+    "uri": "Navigation.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1214457759,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Validate user is able to register",
+        "description": "",
+        "id": "registering-to-automation-practice;validate-user-is-able-to-register",
+        "after": [
+          {
+            "result": {
+              "duration": 147571146,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8145118943,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Automation practice application is opened",
+            "match": {
+              "location": "RegisterStepDef.automation_practice_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2614235642,
+              "status": "passed"
+            },
+            "line": 7,
             "name": "I click sign in",
             "match": {
               "location": "RegisterStepDef.i_click_sign_in()"
@@ -58,10 +311,10 @@
           },
           {
             "result": {
-              "duration": 5463358298,
+              "duration": 5238840806,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "I create account with emailid \"testRandom@testauto.com\"",
             "match": {
               "arguments": [
@@ -76,10 +329,10 @@
           },
           {
             "result": {
-              "duration": 9663785286,
+              "duration": 8960164964,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "I should be able to register with my below details",
             "match": {
               "location": "RegisterStepDef.i_should_be_able_to_register_with_my_below_details(DataTable)"
@@ -97,7 +350,7 @@
                   "Zip",
                   "Mobile"
                 ],
-                "line": 8
+                "line": 10
               },
               {
                 "cells": [
@@ -111,10 +364,135 @@
                   "30000",
                   "0406345454"
                 ],
-                "line": 9
+                "line": 11
               }
             ],
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1286278981,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validate invalid email address shows expected errors",
+        "description": "",
+        "id": "registering-to-automation-practice;validate-invalid-email-address-shows-expected-errors",
+        "after": [
+          {
+            "result": {
+              "duration": 92124040,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8185390764,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Automation practice application is opened",
+            "match": {
+              "location": "RegisterStepDef.automation_practice_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3634320305,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click sign in",
+            "match": {
+              "location": "RegisterStepDef.i_click_sign_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7841639756,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I verify the invalid email address shows expected errors",
+            "match": {
+              "location": "RegisterStepDef.iVerifyTheInvalidEmailAddressShowsExpectedErrors(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "EmailAddress",
+                  "ExpectedErrors"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "xyz@",
+                  "Invalid email address."
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "xyz@xyz",
+                  "Invalid email address."
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "xyz.com@xyz",
+                  "Invalid email address."
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "xyz@xyz.com",
+                  ""
+                ],
+                "line": 23
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@regression"
+          },
+          {
+            "line": 14,
+            "name": "@validations"
+          },
+          {
+            "line": 14,
+            "name": "@emails"
           }
         ]
       }
@@ -123,6 +501,6 @@
     "description": "",
     "id": "registering-to-automation-practice",
     "keyword": "Feature",
-    "uri": "src/test/java/autoapp/automation/features/Register.feature"
+    "uri": "Register.feature"
   }
 ]

@@ -1,13 +1,13 @@
 package autoapp.automation.utility;
 
-import java.util.List;
-import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.util.List;
+import java.util.Set;
 
 public class BrowserDriver implements WebDriver {
 
@@ -22,9 +22,10 @@ public class BrowserDriver implements WebDriver {
         this.browserName = browserName;
 
         if (browserName.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver",
-                    System.getProperty("user.dir") + "/src/test/resources/chromedriver");
-            this.driver = new ChromeDriver();
+
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/chromedriver");
+              driver = new ChromeDriver();
+
         } else if (browserName.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver",
                     System.getProperty("user.dir") + "/src/test/resources/geckodriver");
