@@ -14,7 +14,7 @@ Once you finish assignment, please raise a PR on develop.
 If you have write access issues, please push changes to your personal account and share.
 
 
-##Solution:
+## Solution:
 
   1. While registering, if the email address is incorrect. User should see an error message
     -   Run validation features
@@ -34,7 +34,7 @@ If you have write access issues, please push changes to your personal account an
      mvn clean compile integration-test -Dcucumber.options="--tags @cart"
      ```     
       
-#Run all featurees
+# Run all features
     ```
     mvn clean compile integration-test -Dcucumber.options="--tags @regression"
     ```
